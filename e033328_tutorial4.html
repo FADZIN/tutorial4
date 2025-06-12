@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>e033328_tutorial4</title>  
+    <style>
+        img {
+            margin-top: 50px;
+            width: auto;
+            height: 300px;
+            display: none;
+            border-radius: 8px;        
+        }
+    </style>
+    <script>
+        function showImage(id) {
+            document.getElementById(id).style.display = "inline-block";}        
+    </script>
+</head>
+<body>
+    <h1 style="color:dodgerblue;">JavaScript Tutorial 4</h1>
+    <button onclick="showImage('view')">My View</button>
+    <button onclick="showImage('house')">My House</button>
+    <button onclick="showImage('hobby')">My Hobby</button>
+    <button onclick="this.innerHTML = Date()">Time</button>
+    <button onclick="window.print()">Print Page</button><br>
+    <img id="view" src="Images/image02.jpg">
+    <img id="house" src="Images/image01.jpg">
+    <img id="hobby" src="Images/image03.webp">
+    
+</body>
+</html>
